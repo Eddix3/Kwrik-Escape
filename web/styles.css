@@ -1,0 +1,322 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+/*all images (except kwrik.png) are from http://opengameart.org/content/dungeon-crawl-32x32-tiles*/
+
+html,
+body {
+	text-align: center;
+	font-family: 'Roboto', sans-serif;
+	font-size: 20px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+
+}
+
+#screenWindow {
+	width: 100%;
+	height: 100%;
+	max-height: 640px;
+	max-width: 360px;
+	min-width: 300px;
+	transform: translate(0, 0);
+	overflow: hidden;
+}
+
+.container {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	margin: 0px auto 0px auto;
+	text-align: center;
+	padding: 0px 0px 100px 0px;
+	background-image: url("img/kwirk.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+h1,
+#notification {
+	background-color: #0000008f;
+	border-radius: 30px;
+	padding: 6px;
+	color: #f1f1f1;
+}
+
+
+/* Auswahl der Level */
+
+#selectLevel {
+	margin: 5%;
+	border-spacing: 30px;
+	position: relative;
+	display: inline-block;
+	overflow-y: auto;
+}
+
+.lvlSelect {
+	border: 1px solid black;
+	background-color: lightgrey;
+	border-radius: 30px;
+	padding: 3px 69px;
+}
+
+.lvlSelect:hover {
+	background-color: #ddd
+}
+
+
+/* ----------------------------------------- */
+
+
+/* menu and the content of the menu */
+
+#menu {
+	display: none;
+	position: absolute;
+	padding: 25px;
+	/*background-color: #000000c9;*/
+	background-color: #000000db;
+	border-radius: 30px;
+}
+
+#cleared,
+#credits,
+#tutorialNotification{
+	color: #f1f1f1;
+}
+
+a {
+	color: lightskyblue;
+}
+
+em {
+	font-size: 25px;
+}
+
+#close,
+#nextLevel,
+#levelSelection,
+#restart,
+#closeTutorial{
+	border: 1px solid black;
+	background-color: grey;
+	margin: 8px;
+	width: 100px;
+	border-radius: 30px;
+}
+
+#nextLevel,
+#levelSelection,
+#restart {
+	display: none;
+}
+
+
+/* ----------------------------------------- */
+
+/* tutorial  */
+
+#tutorialWindow {
+	width: min-content;
+	display: none;
+	position: fixed;
+	padding: 25px;
+	/*background-color: #000000c9;*/
+	background-color: #000000db;
+	border-radius: 30px;
+}
+
+/* ----------------------------------------- */
+/* gamefield and elements */
+
+#gameField,
+#tutorialField {
+	border-spacing: 0px;
+}
+
+/* TODO: Look if this is necessary for the testfield maybe just direction animation for the field  */
+#gameField td,
+#tutorialField td {
+	min-width: 32px;
+	height: 32px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.Player {
+	content: url("img/kwirk.png");
+}
+
+.Block {
+	/* background-color: slategray; */
+	background-image: url("img/block.png");
+}
+
+.top {
+	border-top: 2px solid black;
+}
+
+.right {
+	border-right: 2px solid black;
+}
+
+.bottom {
+	border-bottom: 2px solid black;
+}
+
+.left {
+	border-left: 2px solid black;
+}
+
+.Gateway
+/*part*/
+
+{
+	background-image: url("img/gateway_part.png");
+}
+
+.Gateway_joint {
+	background-image: url("img/gateway_joint.png");
+}
+
+.Goal {
+	background-image: url("img/goal.png");
+	background-color: grey;
+}
+
+.Teleport_1 {
+	background-image : url("img/teleport_1.png")
+}
+
+.Teleport_2 {
+	background-image : url("img/teleport_2.png")
+}
+
+.Teleport_3 {
+	background-image : url("img/teleport_3.png")
+}
+
+.Teleport_4 {
+	background-image : url("img/teleport_4.png")
+}
+
+.Teleport_5 {
+	background-image : url("img/teleport_5.png")
+}
+
+.Ground {
+	background-image: url("img/ground.png");
+}
+
+.Hole {
+	background-image: url("img/hole.png");
+}
+
+.Wall {
+	background-image: url("img/wall.png");
+}
+
+.OoB {
+	background-color: transparent;
+}
+
+
+/* ----------------------------------------- */
+
+
+/*when displaying in portrait mode -> rotate the gamefield*/
+
+@media only screen and (orientation:portrait) {
+	#gameField {
+		transform: rotate(90deg)
+	}
+	.Player,
+	.Goal {
+		transform: rotate(-90deg);
+	}
+}
+
+#tutorialField {
+	background-image: url("img/ground.png");
+	margin: 10px;
+	display: inline-block;
+}
+
+@keyframes moveLeft {
+	0% {transform: translate(0px, 0px)}
+	50% {transform: translate(-32px, 0px)}
+	100% {transform: translate(-32px, 0px)}
+}
+@keyframes moveLeft_2 {
+	0% {transform: translate(0px, 0px)}
+	50% {transform: translate(-64px, 0px)}
+	100% {transform: translate(-64px, 0px)}
+}
+
+@keyframes blockIntoHole{
+	0% {transform: translate(0px,0px); visibility: visible}
+	50% {transform: translate(-32px,0px); visibility: hidden}
+	100% {transform: translate(-32px,0px); visibility: hidden}
+}
+
+@keyframes holeGone {
+	0% {visibility: visible}
+	50% {visibility: hidden}
+	100% {visibility: hidden}
+}
+
+@keyframes rotate {
+	0% {transform: translate(0px, 0px)}
+	50% {transform: translate(-32px, 32px)}
+	100% {transform: translate(-32px, 32px)}
+}
+
+@keyframes rotate_2 {
+	0% {transform: translate(0px, 0px)}
+	50% {transform: translate(-32px, -32px)}
+	100% {transform: translate(-32px, -32px)}
+}
+
+@keyframes teleport {
+	0% {transform: translate(0px, 0px)}
+	50% {transform: translate(-32px, 0px)}
+	61% {transform: translate(-32px, 0px); visibility: hidden}
+	62% {transform: translate(-96px, 0px); visibility: visible}
+	100% {transform: translate(-96px, 0px)}
+}
+
+.moveLeft {
+	animation: moveLeft 2s ease infinite;
+}
+.moveLeft_2 {
+	animation: moveLeft_2 2s ease infinite;
+}
+
+.moveBlockInHole {
+	animation: blockIntoHole 2s ease infinite;
+}
+
+.holeGone {
+	animation: holeGone 2s ease infinite;
+}
+
+.teleport {
+	animation: teleport 2s ease infinite;
+}
+
+.rotate {
+	animation: rotate 2s ease infinite;
+}
+
+.rotate_2 {
+	animation: rotate_2 2s ease infinite;
+}
+
+

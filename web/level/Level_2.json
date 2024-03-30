@@ -1,0 +1,21 @@
+{
+  "FloorType": [
+    ["Wall", "Wall",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",     "Wall",   "Wall"],
+    ["Wall", "Ground",  "Ground", "Ground", "Hole",   "Ground", "Ground", "Ground", "Hole",   "Ground",   "Ground", "Wall"],
+    ["Wall", "Ground",  "Ground", "Ground", "Ground", "Ground", "Hole",   "Ground", "Hole",   "Ground",   "Ground", "Wall"],
+    ["Wall", "Ground",  "Ground", "Ground", "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground",   "Ground", "Wall"],
+    ["Wall", "Wall",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",     "Wall",   "Wall"]],
+
+  "Element": [
+    {"id": 0, "type": "Empty"},
+    {"id": 1, "type": "Goal"}],
+
+  "Elements" : [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+
+  "Player": [2, 10]
+}

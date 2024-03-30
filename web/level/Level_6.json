@@ -1,0 +1,42 @@
+{
+
+  "Explanation": {
+
+    "Text": "you can rotate the Gateway",
+
+    "Field": [["Empty", "Empty", "Empty", "Empty",  "Empty"],
+              ["Empty", "Empty",  "Gateway", "Player", "Empty"],
+              ["Empty", "Empty", "Gateway_joint", "Empty",  "Empty"],
+              ["Empty", "Empty", "Empty", "Empty",  "Empty"]],
+
+    "Animate": [["none", "none", "none", "none", "none"],
+                ["none", "none", "rotate", "moveLeft", "none"],
+                ["none", "none", "none", "none", "none"],
+                ["none", "none", "none", "none", "none"]]
+},
+
+    "FloorType": [
+      ["Wall",  "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+      ["Wall",  "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+      ["Wall",  "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall",  "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall",  "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall",  "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+      ["Wall",  "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall"]],
+  
+    "Element": [
+      {"id": 0, "type": "Empty"},
+      {"id": 1, "type": "Goal"},
+      {"id": 2, "type": "Gateway", "joint": [3,5], "parts" : ["nord", "south"]}],
+  
+    "Elements" : [
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 2, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 2, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 2, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+  
+    "Player": [3, 8]
+  }

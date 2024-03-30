@@ -1,0 +1,36 @@
+{
+
+    "Animation": ["gateay", "player", "pos", "dir"],
+
+    "FloorType": [
+        ["OoB",  "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"],
+        ["Wall", "Wall",   "Wall",   "Wall",   "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Wall",   "Wall",   "Wall",   "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+        ["OoB",  "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"]
+    ],
+
+    "Element": [
+        {"id": 0, "type": "Empty"},
+        {"id": 1, "type": "Goal"},
+        {"id": 2, "type": "Block",  "position":[[3, 7]]},
+        {"id": 3, "type": "Gateway", "joint": [2, 6], "parts" : ["nord",  "west"]},
+        {"id": 4, "type": "Gateway", "joint": [2, 8], "parts" : ["nord",  "east"]},
+        {"id": 5, "type": "Gateway", "joint": [4, 6], "parts" : ["south", "west"]},
+        {"id": 6, "type": "Gateway", "joint": [4, 8], "parts" : ["south", "east"]}
+    ],
+
+    "Elements": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 3, 0, 4, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 3, 3, 0, 4, 4, 0, 0, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 5, 5, 0, 6, 6, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 5, 0, 6, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+
+    "Player": [3, 13]
+}

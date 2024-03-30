@@ -1,0 +1,36 @@
+{
+
+  "Explanation": {
+
+    "Text": "you can push the Block around",
+
+    "Field": [["Empty", "Empty", "Empty", "Empty",  "Empty"],
+              ["Empty", "Empty",  "Block", "Player", "Empty"],
+              ["Empty", "Empty", "Empty", "Empty",  "Empty"]],
+
+    "Animate": [["none", "none", "none", "none", "none"],
+                ["none", "none", "moveLeft", "moveLeft", "none"],
+                ["none", "none", "none", "none", "none"]]
+},
+
+    "FloorType": [
+      ["Wall", "Wall",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+      ["Wall", "Ground",  "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall", "Ground",  "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall", "Ground",  "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Wall"],
+      ["Wall", "Wall",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall"]],
+  
+    "Element": [
+      {"id": 0, "type": "Empty"},
+      {"id": 1, "type": "Goal"},
+      {"id": 2, "type": "Block", "position": [[2, 5]]}],
+  
+    "Elements" : [
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 1, 0, 0, 2, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+      [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+  
+    "Player": [2, 7]
+  }

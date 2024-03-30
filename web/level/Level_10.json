@@ -1,0 +1,38 @@
+{
+    "FloorType": [
+        ["OoB",  "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"],
+        ["Wall", "Wall",   "Wall",   "Wall",   "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+        ["Wall", "Wall",   "Wall",   "Wall",   "Wall",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+        ["OoB",  "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"]
+    ],
+
+    "Element": [
+        {"id": 0, "type": "Empty"},
+        {"id": 1, "type": "Goal"},
+        {"id": 2,  "type": "Block",  "position":[[1, 6]]},
+        {"id": 3,  "type": "Block",  "position":[[2, 6]]},
+        {"id": 4,  "type": "Block",  "position":[[3, 6]]},
+        {"id": 5,  "type": "Block",  "position":[[4, 6]]},
+        {"id": 6,  "type": "Block",  "position":[[5, 6]]},
+        {"id": 7,  "type": "Block",  "position":[[1, 8]]},
+        {"id": 8,  "type": "Block",  "position":[[2, 8]]},
+        {"id": 9,  "type": "Block",  "position":[[3, 8]]},
+        {"id": 10, "type": "Block",  "position":[[4, 8]]},
+        {"id": 11, "type": "Block",  "position":[[5, 8]]}
+    ],
+
+    "Elements": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 2, 0, 7,  0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 3, 0, 8,  0, 0, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 4, 0, 9,  0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 5, 0, 10, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 6, 0, 11, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0,  0, 0, 0, 0, 0, 0]
+    ],
+
+    "Player": [3, 12]
+}

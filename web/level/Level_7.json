@@ -1,0 +1,42 @@
+{
+
+    "Explanation": {
+
+        "Text": "rotating like this moves you 2 spaces",
+    
+        "Field": [["Empty", "Empty", "Empty", "Empty",  "Empty"],
+                  ["Empty", "Empty",  "Gateway", "Player", "Empty"],
+                  ["Empty", "Empty", "Gateway_joint", "Gateway",  "Empty"],
+                  ["Empty", "Empty", "Empty", "Empty",  "Empty"]],
+    
+        "Animate": [["none", "none", "none", "none", "none"],
+                    ["none", "none", "rotate", "moveLeft_2", "none"],
+                    ["none", "none", "none", "rotate_2", "none"],
+                    ["none", "none", "none", "none", "none"]]
+    },
+
+    "FloorType": [
+        ["Wall", "Wall",   "Wall", "Wall",    "Wall",  "Wall",    "Wall",  "Wall",  "Wall",  "Wall",    "Wall", "Wall",   "Wall",  "Wall",   "Wall",  "Wall",   "Wall",  "Wall"],
+        ["Wall", "Ground", "Ground","Ground", "Wall",  "Ground", "Ground","Ground", "Ground","Ground", "Ground","Ground", "Ground","Wall",   "Ground","Ground", "Ground","Wall"],
+        ["Wall", "Ground", "Ground","Ground", "Ground","Ground", "Ground","Ground", "Wall",  "Wall",   "Ground","Ground", "Ground","Ground", "Ground","Ground", "Ground","Wall"],
+        ["Wall", "Ground", "Ground","Ground", "Wall",  "Ground", "Ground","Ground", "Ground","Ground", "Ground","Ground", "Ground","Wall",   "Ground","Ground", "Ground","Wall"],
+        ["Wall", "Wall",   "Wall", "Wall",    "Wall",  "Wall",    "Wall",  "Wall",  "Wall",  "Wall",    "Wall", "Wall",   "Wall",  "Wall",   "Wall",  "Wall",   "Wall",  "Wall"]
+    ],
+
+    "Element": [
+        {"id": 0, "type": "Empty"},
+        {"id": 1, "type": "Goal"},
+        {"id": 2, "type": "Gateway", "joint": [2, 6], "parts" : ["nord", "south", "east"]},
+        {"id": 3, "type": "Gateway", "joint": [2, 11], "parts" : ["nord", "south", "west"]}
+    ],
+    
+    "Elements": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 2, 2, 0, 0, 3, 3, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 3, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+
+    "Player" : [2, 15]
+}

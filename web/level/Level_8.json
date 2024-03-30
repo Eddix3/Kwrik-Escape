@@ -1,0 +1,30 @@
+{
+    "FloorType": [
+        ["OoB",  "OoB",  "OoB",  "OoB",  "Wall", "Wall",   "Wall",  "Wall",  "Wall",  "Wall",  "Wall",   "Wall", "OoB",  "OoB",  "OoB",  "OoB"],
+        ["Wall", "Wall", "Wall", "Wall", "Wall",  "Ground", "Ground","Ground","Ground","Ground","Ground", "Wall", "Wall", "Wall", "Wall", "Wall"],
+        ["Wall","Ground","Ground","Ground","Wall","Ground","Ground","Ground","Ground","Ground","Ground","Wall","Ground","Ground","Ground","Wall"],
+        ["Wall", "Ground", "Ground", "Ground","Hole","Ground","Ground","Ground","Ground","Ground","Ground","Ground","Ground","Ground","Ground","Wall"],
+        ["Wall","Ground","Ground","Ground","Wall","Ground","Ground","Ground","Ground","Ground","Ground","Wall","Ground","Ground","Ground","Wall"],
+        ["Wall", "Wall", "Wall", "Wall", "Wall",  "Ground", "Ground","Ground","Ground","Ground","Ground", "Wall", "Wall", "Wall", "Wall", "Wall"],
+        ["OoB",  "OoB",  "OoB",  "OoB",  "Wall", "Wall",   "Wall",  "Wall",  "Wall",  "Wall",  "Wall",   "Wall", "OoB",  "OoB",  "OoB",  "OoB"]
+    ],
+
+    "Element" : [
+        {"id": 0, "type": "Empty"},
+        {"id": 1, "type": "Goal"},
+        {"id": 2, "type": "Gateway", "joint": [3, 7], "parts" : ["nord", "south"]},
+        {"id": 3, "type": "Block",  "position":[[3, 8]]}
+    ],
+
+    "Elements": [
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 1, 0, 0, 0, 0, 2, 3, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+        [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+    ],
+
+    "Player": [3, 13]
+}

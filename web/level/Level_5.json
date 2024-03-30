@@ -1,0 +1,26 @@
+{
+  "FloorType": [
+    ["OoB",   "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"],
+    ["Wall",  "Wall",   "Wall",   "Wall",   "Wall",   "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+    ["Wall",  "Ground", "Ground", "Ground", "Wall",   "Hole",   "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+    ["Wall",  "Ground", "Ground", "Ground", "Ground", "Ground", "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Ground", "Wall"],
+    ["Wall",  "Ground", "Ground", "Ground", "Wall",   "Hole",   "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground", "Ground", "Wall",   "Ground", "Ground", "Ground", "Wall"],
+    ["Wall",  "Wall",   "Wall",   "Wall",   "Wall",   "Hole",   "Hole",   "Hole",   "Ground", "Ground", "Ground", "Ground", "Ground", "Wall",   "Wall",   "Wall",   "Wall",   "Wall"],
+    ["OoB",   "OoB",    "OoB",    "OoB",    "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "Wall",   "OoB",    "OoB",    "OoB",    "OoB"]],
+
+  "Element": [
+    {"id": 0, "type": "Empty"},
+    {"id": 1, "type": "Goal"},
+    {"id": 2, "type": "Block", "position": [[2, 10], [2, 11], [3, 10], [3, 11], [4, 10], [4, 11]]}],
+
+  "Elements" : [
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0],
+    [0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 2, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]],
+
+  "Player": [3, 15]
+}
